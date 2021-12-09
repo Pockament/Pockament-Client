@@ -3,11 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "prettier"
-  ],
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -22,6 +18,9 @@
       "error",
       { "extensions": [".jsx", ".tsx"] }
     ],
-    "quotes": ["error", "double"]
+    "quotes": ["error", "double"],
+    "vars-on-top": "off",
+    "react/function-component-definition": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }
