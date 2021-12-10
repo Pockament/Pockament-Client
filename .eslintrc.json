@@ -21,6 +21,9 @@
     "quotes": ["error", "double"],
     "vars-on-top": "off",
     "react/function-component-definition": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off"
+
   }
 }
