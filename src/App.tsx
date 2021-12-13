@@ -1,9 +1,12 @@
 import { FC } from "react";
+import Footer from "./components/footer";
+import Header from "./components/header";
 import "./index.scss";
 
 const App: FC = () => (
   <div>
-    <h1>test</h1>
+    <Footer />
+    <Header />
   </div>
 );
 
