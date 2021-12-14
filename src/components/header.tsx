@@ -1,15 +1,17 @@
 import { FC } from "react";
-
+import Title from "./title";
+import SetButton from "./setbutton";
 const Header: FC = () => {
-  return <div></div>;
+  const OpenSettings = (): void => {
+    return;
+  };
+
+  return (
+    <div>
+      <Title />
+      <SetButton onClick={OpenSettings} />
+    </div>
+  );
 };
 
 export default Header;
-
-/*
- * 作る機能
- * =========
- * パンくずリスト
- * ルーティングなどもここでやる
- * =========
- */
