@@ -1,10 +1,10 @@
-import { FC, MouseEvent } from "react";
-import Button from "./button";
+import { FC } from "react";
+import { Settings } from "react-feather";
 type Props = {
-  onClick: (event: MouseEvent<HTMLButtonElement>) => void;
+  onClick: () => void;
 };
 const SetButton: FC<Props> = (props) => {
-  return <Button onClick={props.onClick}>{"set"}</Button>;
+  return <Settings onClick={props.onClick} />;
 };
 
 export default SetButton;
