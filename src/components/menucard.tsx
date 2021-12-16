@@ -1,7 +1,5 @@
 import { FC } from "react";
 
-const MenuCard:FC = ()=>{
-   return (<div></div>)
-}
+const MenuCard: FC = () => <div />;
 
 export default MenuCard;

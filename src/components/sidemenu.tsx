@@ -1,11 +1,9 @@
 import { FC } from "react";
 import MenuCard from "./menucard";
 
-const Sidemenu: FC = () => {
-  return (
-    <div>
-      <MenuCard></MenuCard>
-    </div>
-  );
-};
+const Sidemenu: FC = () => (
+  <div>
+    <MenuCard />
+  </div>
+);
 export default Sidemenu;

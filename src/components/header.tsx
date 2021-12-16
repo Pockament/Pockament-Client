@@ -10,7 +10,7 @@ const Header: FC = () => {
   };
   return (
     <div className={style.header}>
-      <Title className={style.title} title={"Test"} />
+      <Title className={style.title} title="Test" />
       <SetButton className={style.setbutton} onClick={openSetting} />
     </div>
   );

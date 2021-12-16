@@ -4,8 +4,8 @@ import Header from "./components/header";
 
 const App: FC = () => (
   <div>
-    <Footer />
     <Header />
+    <Footer />
   </div>
 );
 
