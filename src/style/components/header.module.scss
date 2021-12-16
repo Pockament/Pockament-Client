@@ -1,5 +1,17 @@
 .header {
-  background-color: #f8f3e9;
+  background-color: #4f5769;
+  display: flex;
+  justify-content: space-between;
 
+  .title {
+    font-size: 30px;
+    color: #f8f3e9;
+  }
 
+  .setbutton {
+    color: #f8f3e9;
+    &:hover {
+      color: #e8e3d9;
+    }
+  }
 }

@@ -5,14 +5,13 @@ import SetButton from "./setbutton";
 import style from "../style/components/header.module.scss";
 
 const Header: FC = () => {
-  const OpenSettings = (): void => {
-    return;
+  const openSetting = (): void => {
+    console.log("open setting");
   };
-
   return (
     <div className={style.header}>
-      <Title />
-      <SetButton onClick={OpenSettings} />
+      <Title className={style.title} title={"Test"} />
+      <SetButton className={style.setbutton} onClick={openSetting} />
     </div>
   );
 };

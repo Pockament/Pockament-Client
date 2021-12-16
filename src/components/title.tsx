@@ -1,7 +1,10 @@
 import { FC } from "react";
-
-const Title: FC = () => {
-  return <div></div>;
+type Props = {
+  title: string;
+  className: string;
+};
+const Title: FC<Props> = ({ title, className }) => {
+  return <p className={className}>{title}</p>;
 };
 
 export default Title;
