@@ -44,8 +44,23 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "airbnb"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "react/destructuring-assignment": "off",
+      "import/no-unresolved": "off",
+      "import/extensions": "off",
+      "react/function-component-definition": "off",
+      "react/jsx-filename-extension": "off",
+      "jsx-a11y/click-events-have-key-events": "off",
+      "quotes": [
+        "error",
+        "double"
+      ]
+    }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
