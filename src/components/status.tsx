@@ -9,8 +9,8 @@ type Props = {
 };
 const Status: FC<Props> = ({ denom, numer }) => (
   <div className={style.status}>
-    <div>{`${numer} / ${denom}`}</div>
-    <div>Status</div>
+    <div className={style.ratio}>{`${numer} / ${denom}`}</div>
+    <div className={style.item_name}>Status</div>
   </div>
 );
 

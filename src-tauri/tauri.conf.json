@@ -55,8 +55,8 @@
     "windows": [
       {
         "title": "Pockament",
-        "width": 1024,
-        "height": 728,
+        "width": 340,
+        "height": 540,
         "resizable": true,
         "fullscreen": false
       }
