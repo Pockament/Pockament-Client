@@ -8,7 +8,13 @@ type Props = {
   className?: string;
   children: ReactNode;
 };
-const Button: FC<Props> = ({ buttonType, onClick, children, onChange,className }) => {
+const Button: FC<Props> = ({
+  buttonType,
+  onClick,
+  children,
+  onChange,
+  className,
+}) => {
   return buttonType === "push" ? (
     <label className={`${style.filechose} ${className}`} onClick={onClick}>
       <input type="file" onChange={onChange} multiple />

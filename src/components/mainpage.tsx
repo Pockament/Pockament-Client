@@ -30,7 +30,11 @@ const MainPage: FC<Props> = (props) => {
     <div className={`${style.mainpage} ${props.className}`}>
       <div className={style.input_url}>
         <p className={style.message}>URL</p>
-        <input type="text" placeholder="Please input URL"  className={style.input}/>
+        <input
+          type="text"
+          placeholder="Please input URL"
+          className={style.input}
+        />
       </div>
       <div>
         <div className={style.push_pull}>
