@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Settings } from "react-feather";
 
 type Props = {
-  onClick: () => void;
+  onClick?: () => void;
   className: string;
 };
 const SetButton: FC<Props> = ({ onClick, className }) => (
