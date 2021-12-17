@@ -1,13 +1,14 @@
 {
   "package": {
-    "productName": "pockament",
+    "productName": "Pockament",
     "version": "0.1.0"
   },
   "build": {
     "distDir": "../build",
     "devPath": "http://localhost:3000",
     "beforeDevCommand": "yarn start",
-    "beforeBuildCommand": "yarn build"
+    "beforeBuildCommand": "yarn build",
+    "withGlobalTauri": false
   },
   "tauri": {
     "bundle": {
@@ -23,9 +24,9 @@
       ],
       "resources": [],
       "externalBin": [],
-      "copyright": "",
-      "category": "DeveloperTool",
-      "shortDescription": "",
+      "copyright": "Pockamenters",
+      "category": "Utility",
+      "shortDescription": "This is photos downloader.",
       "longDescription": "",
       "deb": {
         "depends": [],
@@ -54,8 +55,8 @@
     "windows": [
       {
         "title": "Pockament",
-        "width": 800,
-        "height": 600,
+        "width": 340,
+        "height": 500,
         "resizable": true,
         "fullscreen": false
       }

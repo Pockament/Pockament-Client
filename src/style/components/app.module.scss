@@ -1,0 +1,10 @@
+.app_left {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  .header {
+  }
+  .mainpage {
+    height: 100%;
+  }
+}
