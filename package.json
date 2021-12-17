@@ -11,9 +11,11 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "history": "5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-feather": "^2.0.9",
+    "react-router": "^6.1.1",
     "react-router-dom": "6",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
@@ -44,8 +46,7 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "airbnb"
+      "react-app/jest"
     ],
     "rules": {
       "react/react-in-jsx-scope": "off",
