@@ -1,14 +1,16 @@
-import { FC, ReactNode, MouseEvent } from "react";
-import style from "../style/button.module.scss";
+import { FC, ReactNode } from "react";
+import style from "../style/components/button.module.scss";
 type Props = {
+  buttonType?: "pull" | "push";
+  color?: "primary" | "info" | "success" | "warning" | "danger";
   children: ReactNode;
-  onClick: (event: MouseEvent<HTMLButtonElement>) => void;
 };
-const Button: FC<Props> = (props) => {
+const Button: FC<Props> = ({ buttonType, color, children }) => {
   return (
-    <button className={style.button} onClick={props.onClick}>
-      {props.children}
-    </button>
+    <label className={style.filechose}>
+      <input type="file" multiple />
+      {children}
+    </label>
   );
 };
 

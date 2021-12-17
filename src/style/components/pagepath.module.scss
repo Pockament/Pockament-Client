@@ -1,0 +1,13 @@
+.pagepath {
+  font-size: 20px;
+  background-color: #4f5769;
+  color: #f8f3e9;
+  display: flex;
+  justify-content: space-between;
+  .download {
+    margin-left: 10px;
+  }
+  .filepath {
+    margin-right: 10px;
+  }
+}
