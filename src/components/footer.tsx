@@ -1,12 +1,13 @@
 import { FC } from "react";
 import PagePath from "./pagepath";
 import Status from "./status";
-import MainPage from "./mainpage";
 
-const Footer: FC = () => (
-  <div>
+type Props = {
+  className: string;
+};
+const Footer: FC<Props> = (props) => (
+  <div className={props.className}>
     <Status denom={100} numer={100} />
-    <MainPage />
     <PagePath className="" />
   </div>
 );
