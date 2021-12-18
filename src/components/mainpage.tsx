@@ -1,6 +1,7 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import style from "../style/components/mainpage.module.scss";
 import Button from "./button";
+import { invoke } from "@tauri-apps/api/tauri";
 
 type Props = {
   className?: string;
@@ -26,11 +27,16 @@ const MainPage: FC<Props> = (props) => {
   };
 
   const emitEventPush = () => {
-    console.log(filename);
+    invoke("push", {
+      uri: pullURL,
+      path: `${process.env.HOME}/${filename?.[0]}`,
+    });
   };
 
   const emitEventPull = () => {
-    console.log(pullURL);
+    invoke("pull", {
+      port: 8080
+    });
   };
 
   return (
