@@ -6,7 +6,10 @@ type Props = {
   className?: string;
 };
 const MainPage: FC<Props> = (props) => {
+  //ファイル名を取得できる
   const [filename, setFilename] = useState<string[]>();
+  // inputから取得できるURL
+  const [pullURL, setPullURL] = useState<string>("");
 
   const onfileInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     let file: FileList | null = e.target.files;
@@ -18,12 +21,16 @@ const MainPage: FC<Props> = (props) => {
     setFilename(namelist);
   };
 
+  const onChangeURL = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    setPullURL(e.target.value);
+  };
+
   const emitEventPush = () => {
     console.log(filename);
   };
 
   const emitEventPull = () => {
-    console.log("Start");
+    console.log(pullURL);
   };
 
   return (
@@ -33,6 +40,7 @@ const MainPage: FC<Props> = (props) => {
         <input
           type="text"
           placeholder="Please input URL"
+          onChange={onChangeURL}
           className={style.input}
         />
       </div>
